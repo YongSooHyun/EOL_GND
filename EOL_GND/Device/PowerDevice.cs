@@ -94,6 +94,9 @@ namespace EOL_GND.Device
             PowerDevice device;
             switch (powerSetting.DeviceType)
             {
+                case DeviceType.IT_Series:
+                    device = new ItSeriesDevice(deviceName);
+                    break;
                 case DeviceType.MK_P_Series:
                     device = new MkSeriesDevice(deviceName);
                     break;

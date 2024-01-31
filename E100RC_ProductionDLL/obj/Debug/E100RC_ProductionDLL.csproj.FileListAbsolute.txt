@@ -32,3 +32,9 @@ C:\Users\Operation\Documents\GitHub\GndKorea\E100RC_ProductionDLL\obj\Debug\E100
 C:\Users\Operation\Documents\GitHub\GndKorea\E100RC_ProductionDLL\obj\Debug\E100RC_ProductionDLL.csproj.CoreCompileInputs.cache
 C:\Users\Operation\Documents\GitHub\GndKorea\E100RC_ProductionDLL\obj\Debug\E100RC_ProductionDLL.dll
 C:\Users\Operation\Documents\GitHub\GndKorea\E100RC_ProductionDLL\obj\Debug\E100RC_ProductionDLL.pdb
+C:\Users\Operation\Documents\GitHub\EOL_GND\E100RC_ProductionDLL\bin\Debug\E100RC_ProductionDLL.dll
+C:\Users\Operation\Documents\GitHub\EOL_GND\E100RC_ProductionDLL\bin\Debug\E100RC_ProductionDLL.pdb
+C:\Users\Operation\Documents\GitHub\EOL_GND\E100RC_ProductionDLL\obj\Debug\E100RC_ProductionDLL.csproj.AssemblyReference.cache
+C:\Users\Operation\Documents\GitHub\EOL_GND\E100RC_ProductionDLL\obj\Debug\E100RC_ProductionDLL.csproj.CoreCompileInputs.cache
+C:\Users\Operation\Documents\GitHub\EOL_GND\E100RC_ProductionDLL\obj\Debug\E100RC_ProductionDLL.dll
+C:\Users\Operation\Documents\GitHub\EOL_GND\E100RC_ProductionDLL\obj\Debug\E100RC_ProductionDLL.pdb

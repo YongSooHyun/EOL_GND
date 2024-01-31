@@ -79,10 +79,6 @@
     <StartupObject>EOL_GND_Run.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EOL_GND, Version=1.0.0.0, Culture=neutral, PublicKeyToken=987cb6981fe833cb, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\EOL_GND\bin\x86\Debug\EOL_GND.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -131,6 +127,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EOL_GND\EOL_GND.csproj">
+      <Project>{4d54dff3-e40d-44bb-84b5-8338ba4e88de}</Project>
+      <Name>EOL_GND</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

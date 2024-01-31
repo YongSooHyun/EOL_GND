@@ -470,8 +470,8 @@ namespace EOL_GND.View
                 saveTSButton.Enabled = false;
                 saveAsTSButton.Enabled = false;
                 closeTSButton.Enabled = false;
-                stepAddTSButton.Enabled = false;
-                stepRemoveTSButton.Enabled = false;
+                //stepAddTSButton.Enabled = false;
+                //stepRemoveTSButton.Enabled = false;
                 findTSButton.Enabled = false;
                 runAllTSButton.Enabled = false;
                 stopTSButton.Enabled = true;
@@ -495,7 +495,7 @@ namespace EOL_GND.View
                     saveTSButton.Enabled = permission?.CanEditSequence ?? false;
                     saveAsTSButton.Enabled = permission?.CanEditSequence ?? false;
                     closeTSButton.Enabled = true;
-                    stepAddTSButton.Enabled = permission?.CanEditSequence ?? false;
+                    //stepAddTSButton.Enabled = permission?.CanEditSequence ?? false;
                     findTSButton.Enabled = true;
                     runAllTSButton.Enabled = true;
                     clearResultsTSButton.Enabled = true;
@@ -510,7 +510,7 @@ namespace EOL_GND.View
                     saveTSButton.Enabled = false;
                     saveAsTSButton.Enabled = false;
                     closeTSButton.Enabled = false;
-                    stepAddTSButton.Enabled = false;
+                    //stepAddTSButton.Enabled = false;
                     findTSButton.Enabled = false;
                     runAllTSButton.Enabled = false;
                     clearResultsTSButton.Enabled = false;

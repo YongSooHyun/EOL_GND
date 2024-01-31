@@ -670,6 +670,18 @@ namespace EOL_GND.Model
                             PowerTestMode.ReadVoltageCurrent,
                             PowerTestMode.RunCommandLine,
                         };
+                    case DeviceType.IT_Series:
+                        return new object[]
+                        {
+                            PowerTestMode.ReadIDN,
+                            PowerTestMode.ON,
+                            PowerTestMode.OFF,
+                            PowerTestMode.Set,
+                            PowerTestMode.MeasureVoltage,
+                            PowerTestMode.MeasureCurrent,
+                            PowerTestMode.ReadVoltageCurrent,
+                            PowerTestMode.RunCommandLine,
+                        };
                 }
             }
             catch

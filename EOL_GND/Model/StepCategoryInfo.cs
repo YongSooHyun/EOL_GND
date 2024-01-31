@@ -57,6 +57,8 @@ namespace EOL_GND.Model
                 StepCategory.GloquadSECC,
 #endif
                 StepCategory.SerialPort,
+                StepCategory.NewPower,
+                StepCategory.Down,
 #if MOTION
                 StepCategory.AlphaMotion,
                 StepCategory.MightyZap,
