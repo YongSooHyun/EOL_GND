@@ -58,7 +58,6 @@ C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Relea
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\EOL_GND Run.exe.config
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\EOL_GND Run.exe
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\EOL_GND Run.pdb
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\EOL_GND.dll
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\Ivi.Visa.dll
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\Be.Windows.Forms.HexBox.dll
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\ObjectListView.dll
@@ -72,25 +71,13 @@ C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Relea
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.Common.dll
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\Menees.Windows.Forms.dll
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\Menees.Common.dll
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.TestDevices.dll
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.TestDevices.PowerUpUnit.dll
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.TestDevices.MeasurementUnit.dll
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.TestDevices.Stimulus60Unit.dll
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\Menees.Windows.dll
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\EOL_GND.pdb
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\EOL_GND.dll.config
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\ObjectListView.xml
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\InfoBox.pdb
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.PluginTestCell.xml
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\E100RC_ProductionDLL.pdb
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.VirtualTestSets.TestSet_A1.xml
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.Common.xml
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\Menees.Windows.Forms.xml
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\Menees.Common.xml
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.TestDevices.xml
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.TestDevices.PowerUpUnit.xml
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.TestDevices.MeasurementUnit.xml
-C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\TestFramework.TestDevices.Stimulus60Unit.xml
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\Menees.Windows.xml
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\ar\InfoBox.resources.dll
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\de\InfoBox.resources.dll
@@ -106,3 +93,5 @@ C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\obj\x86\Relea
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\obj\x86\Release\EOL_GND Run.csproj.CopyComplete
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\obj\x86\Release\EOL_GND Run.exe
 C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\obj\x86\Release\EOL_GND Run.pdb
+C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\EOL_GND.exe
+C:\OperationService\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\x86\Release\EOL_GND.exe.config

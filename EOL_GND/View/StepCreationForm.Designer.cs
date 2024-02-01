@@ -107,8 +107,6 @@
             this.templateSmallImageList.Images.SetKeyName(14, "serial_port-32.png");
             this.templateSmallImageList.Images.SetKeyName(15, "servo-32.png");
             this.templateSmallImageList.Images.SetKeyName(16, "mighty_zap-32.png");
-            this.templateSmallImageList.Images.SetKeyName(17, "power-32.png");
-            this.templateSmallImageList.Images.SetKeyName(18, "save-32.png");
             // 
             // label2
             // 

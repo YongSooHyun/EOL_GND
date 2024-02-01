@@ -131,13 +131,13 @@ namespace EOL_GND.View
 
             // Toolbar 업데이트.
             UpdateToolStripButtons();
-            //MessageBox.Show(filePath);
+
             // 시작과 동시에 열려는 파일.
             if (File.Exists(filePath))
             {
                 openFilePath = filePath;
             }
-            
+
             // eloz 디바이스.
             elozTestSet = testSet;
 
@@ -149,7 +149,6 @@ namespace EOL_GND.View
 
             // 현재 사용자 보여주기.
             ShowCurrentUser();
-           
         }
 
         // 현재 로그인한 사용자를 보여준다.
@@ -233,17 +232,17 @@ namespace EOL_GND.View
         {
             base.OnShown(e);
 
-            // Check the license.
+            //// Check the license.
             //if (!SequenceViewModel.GetLicenseEnabled(AppSettings.SharedInstance.LicenseKey))
             //{
             //    // Show the license dialog.
-            //    //var dialog = new LicenseForm();
-            //    //dialog.StartPosition = FormStartPosition.CenterParent;
-            //    //if (dialog.ShowDialog() != DialogResult.OK)
-            //    //{
-            //    //    Close();
-            //    //    return;
-            //    //}
+            //    var dialog = new LicenseForm();
+            //    dialog.StartPosition = FormStartPosition.CenterParent;
+            //    if (dialog.ShowDialog() != DialogResult.OK)
+            //    {
+            //        Close();
+            //        return;
+            //    }
             //}
 
             // 지정한 파일 열기.
@@ -251,10 +250,8 @@ namespace EOL_GND.View
             {
                 try
                 {
-                    
-                    TestDevice.CloseAllDevices();
                     LoadFile(openFilePath);
-                    RunAllTSButton_Click(runAllTSButton,EventArgs.Empty);
+
                     // 자동실행.
                     if (elozTestSet != null && autoStart)
                     {
@@ -470,8 +467,8 @@ namespace EOL_GND.View
                 saveTSButton.Enabled = false;
                 saveAsTSButton.Enabled = false;
                 closeTSButton.Enabled = false;
-                //stepAddTSButton.Enabled = false;
-                //stepRemoveTSButton.Enabled = false;
+                stepAddTSButton.Enabled = false;
+                stepRemoveTSButton.Enabled = false;
                 findTSButton.Enabled = false;
                 runAllTSButton.Enabled = false;
                 stopTSButton.Enabled = true;
@@ -495,7 +492,7 @@ namespace EOL_GND.View
                     saveTSButton.Enabled = permission?.CanEditSequence ?? false;
                     saveAsTSButton.Enabled = permission?.CanEditSequence ?? false;
                     closeTSButton.Enabled = true;
-                    //stepAddTSButton.Enabled = permission?.CanEditSequence ?? false;
+                    stepAddTSButton.Enabled = permission?.CanEditSequence ?? false;
                     findTSButton.Enabled = true;
                     runAllTSButton.Enabled = true;
                     clearResultsTSButton.Enabled = true;
@@ -510,7 +507,7 @@ namespace EOL_GND.View
                     saveTSButton.Enabled = false;
                     saveAsTSButton.Enabled = false;
                     closeTSButton.Enabled = false;
-                    //stepAddTSButton.Enabled = false;
+                    stepAddTSButton.Enabled = false;
                     findTSButton.Enabled = false;
                     runAllTSButton.Enabled = false;
                     clearResultsTSButton.Enabled = false;
@@ -1018,31 +1015,24 @@ namespace EOL_GND.View
         // 설정 대화상자 표시.
         private void SettingsTSButton_Click(object sender, EventArgs e)
         {
-            Task.Run(() =>
-            {
-                Utils.InvokeIfRequired(this, () =>
-                {
-                    var form = new SettingsForm();
-                    form.StartPosition = FormStartPosition.CenterParent;
-                    form.ShowInTaskbar = false;
-                    form.ShowDialog();
-                });
-            });
+            var form = new SettingsForm();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowInTaskbar = false;
+            form.ShowDialog();
         }
 
         // 라이선스 대화상자 표시.
         private void licenseTSButton_Click(object sender, EventArgs e)
         {
             // Show the license dialog.
-            var dialog = new LicenseForm();
-            dialog.StartPosition = FormStartPosition.CenterParent;
-            dialog.ShowDialog();
+            //var dialog = new LicenseForm();
+            //dialog.StartPosition = FormStartPosition.CenterParent;
+            //dialog.ShowDialog();
         }
 
         // 시퀀스 실행.
         private async void RunAllTSButton_Click(object sender, EventArgs e)
         {
-
             tokenSource?.Dispose();
             tokenSource = new CancellationTokenSource();
             await RunSteps(ViewModel.OriginalSteps, null, true, true, tokenSource.Token);
@@ -1051,7 +1041,6 @@ namespace EOL_GND.View
         // 지정한 스텝들을 실행한다.
         private async Task<EolStep.ResultState> RunSteps(IList modelObjects, string variant, bool? skipDisabled, bool runCleanup, CancellationToken token)
         {
-
             LogClear();
             var stopwatch = new Stopwatch();
             var resultState = EolStep.ResultState.NoState;
@@ -1203,7 +1192,6 @@ namespace EOL_GND.View
                                     catch (Exception ex)
                                     {
                                         Logger.LogError($"Image display error: {ex.Message}");
-                                      
                                     }
                                 }
                             }
@@ -1211,25 +1199,18 @@ namespace EOL_GND.View
 
                         // Debugging.
                         Logger.LogVerbose("Task: all steps are executed");
-                        //this.Close();
+
                         return runResults;
                     });
 
                     // Debugging.
                     Logger.LogVerbose("All steps are executed");
-                    Utils.InvokeIfRequired(this, () =>
-                    {
-                        this.Close();
-                        SequenceViewModel.CreateLogFiles(results, Path.GetFileNameWithoutExtension(ViewModel.FilePath));
-                    });
-                    
                 }
 
                 resultState = SequenceViewModel.GetTotalResultState(results);
             }
             catch (Exception ex)
             {
-
                 resultState = EolStep.ResultState.Aborted;
                 Logger.LogError($"Error: {ex.Message}");
 
@@ -1239,7 +1220,6 @@ namespace EOL_GND.View
                 }
 
                 InformationBox.Show(ex.Message, title: "Error", buttons: InformationBoxButtons.OK, icon: InformationBoxIcon.Error);
-                this.Close();
             }
             finally
             {
@@ -1257,7 +1237,6 @@ namespace EOL_GND.View
                 sequenceListView.ShowCommandMenuOnRightClick = true;
                 sequenceListView.ContextMenuStrip = stepsContextMenu;
                 UpdateToolStripButtons();
-                this.Close();
             }
 
             return resultState;

@@ -37,8 +37,6 @@ namespace EOL_GND.Model
         SerialPort,
         AlphaMotion,
         MightyZap,
-        NewPower,
-        Down,
     }
     public static class StepCategoryExtensions
     {
@@ -80,10 +78,6 @@ namespace EOL_GND.Model
                     return "AlphaMotion";
                 case StepCategory.MightyZap:
                     return "MightyZap";
-                case StepCategory.NewPower:
-                    return "NewPower";
-                case StepCategory.Down:
-                    return "Download";
                 default:
                     return "Unknown";
             }
@@ -127,10 +121,6 @@ namespace EOL_GND.Model
                     return "servo-32.png";
                 case StepCategory.MightyZap:
                     return "mighty_zap-32.png";
-                case StepCategory.NewPower:
-                    return "power-32.png";
-                case StepCategory.Down:
-                    return "save-32.png";
                 default:
                     return null;
             }

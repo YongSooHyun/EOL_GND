@@ -60,6 +60,7 @@
             this.settingsTSButton = new System.Windows.Forms.ToolStripButton();
             this.versionHistoryTSButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.licenseTSButton = new System.Windows.Forms.ToolStripButton();
             this.logoutTSButton = new System.Windows.Forms.ToolStripButton();
             this.loginTSButton = new System.Windows.Forms.ToolStripButton();
             this.smallImageList = new System.Windows.Forms.ImageList(this.components);
@@ -161,6 +162,7 @@
             this.settingsTSButton,
             this.versionHistoryTSButton,
             this.toolStripSeparator11,
+            this.licenseTSButton,
             this.logoutTSButton,
             this.loginTSButton});
             this.sequenceToolStrip.Location = new System.Drawing.Point(0, 0);
@@ -271,6 +273,7 @@
             // stepAddTSButton
             // 
             this.stepAddTSButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.stepAddTSButton.Enabled = false;
             this.stepAddTSButton.Image = global::EOL_GND.Properties.Resources.step_add;
             this.stepAddTSButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.stepAddTSButton.Name = "stepAddTSButton";
@@ -431,6 +434,16 @@
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
             this.toolStripSeparator11.Size = new System.Drawing.Size(6, 39);
+            // 
+            // licenseTSButton
+            // 
+            this.licenseTSButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.licenseTSButton.Image = global::EOL_GND.Properties.Resources.certificate_32;
+            this.licenseTSButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.licenseTSButton.Name = "licenseTSButton";
+            this.licenseTSButton.Size = new System.Drawing.Size(36, 36);
+            this.licenseTSButton.Text = "License";
+            this.licenseTSButton.Click += new System.EventHandler(this.licenseTSButton_Click);
             // 
             // logoutTSButton
             // 
@@ -1118,6 +1131,7 @@
         private System.Windows.Forms.ToolStripMenuItem insertBeneathCurrentRowToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem insertAtBottomToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
+        private System.Windows.Forms.ToolStripButton licenseTSButton;
         private System.Windows.Forms.ToolStripButton versionHistoryTSButton;
         private System.Windows.Forms.ToolStripButton showEnabledTSButton;
         private BrightIdeasSoftware.OLVColumn uidColumn;

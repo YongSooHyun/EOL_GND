@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EOL_GND.View;
 using System.Windows.Forms;
 
 namespace EOL_GND
 {
-    internal class program
+    public class Program
     {
         [STAThread]
         static void Main()
@@ -15,7 +16,6 @@ namespace EOL_GND
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // File association.
             string file = null;
             var args = Environment.GetCommandLineArgs();
             if (args != null && args.Length > 1)

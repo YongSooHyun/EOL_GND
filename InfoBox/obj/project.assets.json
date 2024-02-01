@@ -277,11 +277,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Operation\\Documents\\GitHub\\EOL_GND\\InfoBox\\InfoBox.csproj",
+      "projectUniqueName": "C:\\Users\\Operation\\Desktop\\IntelligentPcbaTester_Infac_Inline\\IntelligentPcbaTester_Infac_Inline\\InfoBox\\InfoBox.csproj",
       "projectName": "InfoBox",
-      "projectPath": "C:\\Users\\Operation\\Documents\\GitHub\\EOL_GND\\InfoBox\\InfoBox.csproj",
+      "projectPath": "C:\\Users\\Operation\\Desktop\\IntelligentPcbaTester_Infac_Inline\\IntelligentPcbaTester_Infac_Inline\\InfoBox\\InfoBox.csproj",
       "packagesPath": "C:\\Users\\Operation\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Operation\\Documents\\GitHub\\EOL_GND\\InfoBox\\obj\\",
+      "outputPath": "C:\\Users\\Operation\\Desktop\\IntelligentPcbaTester_Infac_Inline\\IntelligentPcbaTester_Infac_Inline\\InfoBox\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

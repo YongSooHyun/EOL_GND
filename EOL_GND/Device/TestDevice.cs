@@ -204,7 +204,6 @@ namespace EOL_GND.Device
         PeakLIN,
         GloquadSECC,
         SerialPort,
-        IT_Series,
     }
 
     public static class DeviceTypeExtensions
