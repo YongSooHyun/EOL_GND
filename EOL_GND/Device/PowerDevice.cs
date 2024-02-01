@@ -97,6 +97,9 @@ namespace EOL_GND.Device
                 case DeviceType.MK_P_Series:
                     device = new MkSeriesDevice(deviceName);
                     break;
+                case DeviceType.ITechDevice:
+                    device = new ItechDevice(deviceName);
+                    break;
                 case DeviceType.ODA_EX_Series:
                 default:
                     device = new OdaExSeriesDevice(deviceName);

@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Be.Windows.Forms.HexBox", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoBox", "InfoBox\InfoBox.csproj", "{18B58CA4-E470-4EB4-AC2B-52BECAFE0B53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EOL_GND Run", "..\..\..\Documents\GitHub\EOL_GND\EOL_GND Run\EOL_GND Run.csproj", "{C0AC3BA3-9B44-491E-B25A-DAF5969A8684}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EOL_GND Run", "EOL_GND Run\EOL_GND Run.csproj", "{C0AC3BA3-9B44-491E-B25A-DAF5969A8684}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -176,6 +176,7 @@ namespace EOL_GND.Device
     public enum DeviceCategory
     {
         Power,
+        ITechDevice,
         DMM,
         Oscilloscope,
         WaveformGenerator,
@@ -194,6 +195,7 @@ namespace EOL_GND.Device
     {
         ODA_EX_Series,
         MK_P_Series,
+        ITechDevice,
         Fluke_8845A_8846A,
         Keysight_Truevolt_Series,
         Keysight_InfiniiVision_3000T_X,
@@ -236,6 +238,8 @@ namespace EOL_GND.Device
                     return "GloquadTech SECC";
                 case DeviceType.SerialPort:
                     return "Serial Port";
+                case DeviceType.ITechDevice:
+                    return "ITechDevice";
                 default:
                     return null;
             }
@@ -248,6 +252,7 @@ namespace EOL_GND.Device
             {
                 case DeviceType.ODA_EX_Series:
                 case DeviceType.MK_P_Series:
+                case DeviceType.ITechDevice:
                     category = DeviceCategory.Power;
                     break;
                 case DeviceType.Fluke_8845A_8846A:

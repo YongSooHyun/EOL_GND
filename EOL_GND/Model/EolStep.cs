@@ -34,6 +34,7 @@ namespace EOL_GND.Model
         AbortOnFail,
         Dummy,
         GloquadSECC,
+        ITech,
         SerialPort,
         AlphaMotion,
         MightyZap,
@@ -1638,6 +1639,8 @@ namespace EOL_GND.Model
                 var deviceSetting = settingsManager.FindSetting(devCategory ?? DeviceCategory.Power, DeviceName);
                 switch (deviceSetting.DeviceType)
                 {
+                    case DeviceType.ITechDevice:
+                        return Properties.Resources.power_oda_ex_256;
                     case DeviceType.ODA_EX_Series:
                         return Properties.Resources.power_oda_ex_256;
                     case DeviceType.MK_P_Series:
