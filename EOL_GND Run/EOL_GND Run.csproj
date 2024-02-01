@@ -123,13 +123,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\EOL_GND\EOL_GND.csproj">
       <Project>{4d54dff3-e40d-44bb-84b5-8338ba4e88de}</Project>
       <Name>EOL_GND</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="app_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

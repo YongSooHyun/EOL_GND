@@ -69,7 +69,6 @@
             this.elapsedLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.infoLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.spacingLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.runningProgressBar = new EOL_GND.View.ToolStripTextProgressBar();
             this.companyStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.mainSplitContainer = new System.Windows.Forms.SplitContainer();
             this.sequenceListView = new BrightIdeasSoftware.FastObjectListView();
@@ -118,6 +117,7 @@
             this.restartIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePropertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logTextBox = new System.Windows.Forms.TextBox();
+            this.runningProgressBar = new EOL_GND.View.ToolStripTextProgressBar();
             this.sequenceToolStrip.SuspendLayout();
             this.sequenceStatusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainSplitContainer)).BeginInit();
@@ -538,17 +538,6 @@
             this.spacingLabel.Name = "spacingLabel";
             this.spacingLabel.Size = new System.Drawing.Size(1129, 26);
             this.spacingLabel.Spring = true;
-            // 
-            // runningProgressBar
-            // 
-            this.runningProgressBar.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
-            this.runningProgressBar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.runningProgressBar.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
-            this.runningProgressBar.MarqueeAnimationSpeed = 50;
-            this.runningProgressBar.Name = "runningProgressBar";
-            this.runningProgressBar.Size = new System.Drawing.Size(150, 26);
-            this.runningProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.runningProgressBar.Visible = false;
             // 
             // companyStatusLabel
             // 
@@ -1021,6 +1010,17 @@
             this.logTextBox.Size = new System.Drawing.Size(150, 46);
             this.logTextBox.TabIndex = 0;
             this.logTextBox.WordWrap = false;
+            // 
+            // runningProgressBar
+            // 
+            this.runningProgressBar.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
+            this.runningProgressBar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.runningProgressBar.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
+            this.runningProgressBar.MarqueeAnimationSpeed = 50;
+            this.runningProgressBar.Name = "runningProgressBar";
+            this.runningProgressBar.Size = new System.Drawing.Size(150, 26);
+            this.runningProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.runningProgressBar.Visible = false;
             // 
             // SequenceForm
             // 

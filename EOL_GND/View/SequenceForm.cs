@@ -1025,9 +1025,7 @@ namespace EOL_GND.View
         private void licenseTSButton_Click(object sender, EventArgs e)
         {
             // Show the license dialog.
-            //var dialog = new LicenseForm();
-            //dialog.StartPosition = FormStartPosition.CenterParent;
-            //dialog.ShowDialog();
+    
         }
 
         // 시퀀스 실행.

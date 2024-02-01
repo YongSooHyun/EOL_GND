@@ -4,3 +4,9 @@ E:\Project\ICT_Project\IntelligentPcbaTester_Infac_Inline\CasRnf32NET\obj\Debug\
 E:\Project\ICT_Project\IntelligentPcbaTester_Infac_Inline\CasRnf32NET\obj\Debug\CasRnf32NET.csproj.CoreCompileInputs.cache
 E:\Project\ICT_Project\IntelligentPcbaTester_Infac_Inline\CasRnf32NET\obj\Debug\CasRnf32NET.dll
 E:\Project\ICT_Project\IntelligentPcbaTester_Infac_Inline\CasRnf32NET\obj\Debug\CasRnf32NET.pdb
+C:\Users\Operation\Documents\GitHub\EOL_GND\CasRnf32NET\bin\Debug\CasRnf32NET.dll
+C:\Users\Operation\Documents\GitHub\EOL_GND\CasRnf32NET\bin\Debug\CasRnf32NET.pdb
+C:\Users\Operation\Documents\GitHub\EOL_GND\CasRnf32NET\obj\Debug\CasRnf32NET.csproj.AssemblyReference.cache
+C:\Users\Operation\Documents\GitHub\EOL_GND\CasRnf32NET\obj\Debug\CasRnf32NET.csproj.CoreCompileInputs.cache
+C:\Users\Operation\Documents\GitHub\EOL_GND\CasRnf32NET\obj\Debug\CasRnf32NET.dll
+C:\Users\Operation\Documents\GitHub\EOL_GND\CasRnf32NET\obj\Debug\CasRnf32NET.pdb
