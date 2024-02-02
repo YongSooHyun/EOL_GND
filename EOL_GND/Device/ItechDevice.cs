@@ -23,6 +23,7 @@ namespace EOL_GND.Device
         public override void Connect(CancellationToken token)
         {
             visaDevice.Connect(Setting as VisaDeviceSetting, token);
+            SendCommand("SYST:REM", false,token);
         }
 
         public override void Disconnect()
