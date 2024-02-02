@@ -145,7 +145,7 @@ namespace EOL_GND.Device
 
         public override void Reset(CancellationToken token)
         {
-            throw new NotSupportedException();
+           
         }
 
         public override object GetMinValue(object step, string paramName, CancellationToken token)

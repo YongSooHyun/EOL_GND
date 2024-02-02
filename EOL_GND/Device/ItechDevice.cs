@@ -54,12 +54,12 @@ namespace EOL_GND.Device
 
         public override double MeasureCurrent(int channel, CancellationToken token)
         {
-            return SendAndReadDouble($"IOUT{channel}?", token);
+            return SendAndReadDouble($"SOURce:CURRent?", token);
         }
 
         public override double MeasureVoltage(int channel, CancellationToken token)
         {
-            return SendAndReadDouble($"VOUT{channel}?", token);
+            return SendAndReadDouble($"SOURce:VOLTage?", token);
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace EOL_GND.Device
         /// <param name="on">true이면 출력을 허용, false이면 출력을 차단한다.</param>
         private void SetOutput(bool on, CancellationToken token)
         {
-            SendCommand($"OUT{(on ? "1" : "0")}", false, token);
+            SendCommand($"OUTPut:STATe {(on ? "ON" : "OFF")}", false, token);
         }
 
         public override void PowerOff(CancellationToken token)
@@ -83,10 +83,10 @@ namespace EOL_GND.Device
 
         public override bool GetPowerState(CancellationToken token)
         {
-            //var response = SendCommand("STATUS?", true, token);
+            var response = SendCommand("OUTPut:STATe?", true, token).TrimEnd('\n');
             //byte flags = Convert.ToByte(response.Trim(), 2);
-            //return (flags & 0b0100_0000) != 0;
-            throw new NotSupportedException();
+            return response=="1"?true:false;
+            //throw new NotSupportedException();
         }
 
         public override string ReadIDN(CancellationToken token)
@@ -102,47 +102,51 @@ namespace EOL_GND.Device
         public override void SetPower(int channel, double voltage, double? current, int queryDelay, CancellationToken token)
         {
             // 전압 설정.
-            SendCommand($"VSET{channel}:{voltage}", false, token);
+            SendCommand($"APPL {voltage},{current}:", false, token);
             if (queryDelay > 0)
             {
                 Task.Delay(queryDelay).Wait(token);
             }
-            var settedVoltage = SendAndReadDouble($"VSET{channel}?", token);
-            if (voltage != settedVoltage)
-            {
-                throw new Exception($"파워 설정에 실패하였습니다(설정하려는 전압: {voltage}V, 설정된 전압: {settedVoltage}V).");
-            }
-
-            // 전류 설정.
-            if (current != null)
-            {
-                SendCommand($"ISET{channel}:{current}", false, token);
-                if (queryDelay > 0)
-                {
-                    Task.Delay(queryDelay).Wait();
-                }
-                var settedCurrent = SendAndReadDouble($"ISET{channel}?", token);
-                if (current != settedCurrent)
-                {
-                    throw new Exception($"파워 설정에 실패하였습니다(설정하려는 전류: {current}A, 설정된 전류: {settedCurrent}A).");
-                }
-            }
+            var settedVoltage = SendAndReadDouble($"SOURce:VOLTage?", token);
+            var settedCURRent = SendAndReadDouble($"SOURce:CURRent?", token);
+            //if (voltage != settedVoltage)
+            //{
+            //    throw new Exception($"파워 설정에 실패하였습니다(설정하려는 전압: {voltage}V, 설정된 전압: {settedVoltage}V).");
+            //}
+            //if (current != settedCURRent)
+            //{
+            //    throw new Exception($"파워 설정에 실패하였습니다(설정하려는 전류: {current}V, 설정된 전류: {settedCURRent}V).");
+            //}
+            //// 전류 설정.
+            //if (current != null)
+            //{
+            //    SendCommand($"ISET{channel}:{current}", false, token);
+            //    if (queryDelay > 0)
+            //    {
+            //        Task.Delay(queryDelay).Wait();
+            //    }
+            //    var settedCurrent = SendAndReadDouble($"ISET{channel}?", token);
+            //    if (current != settedCurrent)
+            //    {
+            //        throw new Exception($"파워 설정에 실패하였습니다(설정하려는 전류: {current}A, 설정된 전류: {settedCurrent}A).");
+            //    }
+            //}
         }
 
         public override void ReadPower(int channel, out double voltage, out double current, CancellationToken token)
         {
-            voltage = SendAndReadDouble($"VSET{channel}?", token);
-            current = SendAndReadDouble($"ISET{channel}?", token);
+            voltage = SendAndReadDouble($"SOURce:VOLTage?", token);
+            current = SendAndReadDouble($"SOURce:CURRent?", token);
         }
 
         public override string ReadSN(CancellationToken token)
         {
-            throw new NotSupportedException();
+            return SendCommand("*IDN?", true, token);
         }
 
         public override void Reset(CancellationToken token)
         {
-            throw new NotSupportedException();
+            SendCommand("*RST", false, token);
         }
 
         public override object GetMinValue(object step, string paramName, CancellationToken token)
