@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4D54DFF3-E40D-44BB-84B5-8338BA4E88DE}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EOL_GND</RootNamespace>
     <AssemblyName>EOL_GND</AssemblyName>
@@ -76,11 +76,15 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>EOL_GND.Program</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ivi.Visa, Version=5.11.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=MSIL" />
-    <Reference Include="Keysight.Visa, Version=18.2.0.0, Culture=neutral, PublicKeyToken=7a01cdb2a9131f73, processorArchitecture=MSIL" />
+    <Reference Include="Keysight.Visa, Version=18.2.0.0, Culture=neutral, PublicKeyToken=7a01cdb2a9131f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Keysight.Visa.dll</HintPath>
+    </Reference>
     <Reference Include="Menees.Common, Version=5.1.2.0, Culture=neutral, PublicKeyToken=47808368f4c49fe0, processorArchitecture=MSIL">
       <HintPath>..\packages\Menees.Common.5.1.2\lib\net48\Menees.Common.dll</HintPath>
     </Reference>

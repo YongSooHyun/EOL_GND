@@ -137,6 +137,10 @@ namespace EOL_GND.Model
         {
             foreach (var setting in DeviceSettings)
             {
+                if(setting.DeviceName == "ITechDevice")
+                {
+
+                }
                 if (setting.DeviceType.GetCategory() == devCategory && 
                     string.Equals(setting.DeviceName, deviceName, StringComparison.OrdinalIgnoreCase))
                 {
