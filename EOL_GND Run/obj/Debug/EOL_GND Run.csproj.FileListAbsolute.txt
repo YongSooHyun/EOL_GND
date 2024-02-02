@@ -41,9 +41,6 @@ E:\Project\ICT_Project\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\Debug\
 E:\Project\ICT_Project\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\Debug\DLL\HKMC_AdvancedSeedKey_Win32_ICCU.dll
 E:\Project\ICT_Project\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\Debug\DLL\HKMC_AdvancedSeedKey_Win32_SX2.dll
 E:\Project\ICT_Project\IntelligentPcbaTester_Infac_Inline\EOL_GND Run\bin\Debug\NullFX.CRC.dll
-C:\Users\Operation\Documents\GitHub\EOL_GND\EOL_GND Run\bin\Debug\DLL\HKMC_AdvancedSeedKey_Win32_ICCU.dll
-C:\Users\Operation\Documents\GitHub\EOL_GND\EOL_GND Run\bin\Debug\DLL\HKMC_AdvancedSeedKey_Win32_SX2.dll
-C:\Users\Operation\Documents\GitHub\EOL_GND\EOL_GND Run\bin\Debug\InfoBox.nuspec
 C:\Users\Operation\Documents\GitHub\EOL_GND\EOL_GND Run\bin\Debug\EOL_GND Run.exe.config
 C:\Users\Operation\Documents\GitHub\EOL_GND\EOL_GND Run\bin\Debug\EOL_GND Run.exe
 C:\Users\Operation\Documents\GitHub\EOL_GND\EOL_GND Run\bin\Debug\EOL_GND Run.pdb
