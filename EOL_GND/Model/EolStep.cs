@@ -1640,7 +1640,7 @@ namespace EOL_GND.Model
                 switch (deviceSetting.DeviceType)
                 {
                     case DeviceType.ITechDevice:
-                        return Properties.Resources.power_oda_ex_256;
+                        return Properties.Resources.ITech;
                     case DeviceType.ODA_EX_Series:
                         return Properties.Resources.power_oda_ex_256;
                     case DeviceType.MK_P_Series:

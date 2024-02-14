@@ -86,7 +86,7 @@ namespace EOL_GND.Device
         {
             var response = SendCommand("OUTPut:STATe?", true, token).TrimEnd('\n');
             //byte flags = Convert.ToByte(response.Trim(), 2);
-            return response=="1"?true:false;
+            return response=="1"? true : false;
             //throw new NotSupportedException();
         }
 
@@ -103,13 +103,13 @@ namespace EOL_GND.Device
         public override void SetPower(int channel, double voltage, double? current, int queryDelay, CancellationToken token)
         {
             // 전압 설정.
-            SendCommand($"APPL {voltage},{current}:", false, token);
+            SendCommand($"APPL {voltage},{current}", false, token);
             if (queryDelay > 0)
             {
                 Task.Delay(queryDelay).Wait(token);
             }
-            var settedVoltage = SendAndReadDouble($"SOURce:VOLTage?", token);
-            var settedCURRent = SendAndReadDouble($"SOURce:CURRent?", token);
+            //var settedVoltage = SendAndReadDouble($"SOURce:VOLTage?", token);
+            //var settedCURRent = SendAndReadDouble($"SOURce:CURRent?", token);
             //if (voltage != settedVoltage)
             //{
             //    throw new Exception($"파워 설정에 실패하였습니다(설정하려는 전압: {voltage}V, 설정된 전압: {settedVoltage}V).");

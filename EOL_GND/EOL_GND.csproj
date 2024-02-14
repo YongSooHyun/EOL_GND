@@ -908,6 +908,7 @@
     <Content Include="app_icon.ico" />
     <Content Include="DiffMatchPatch\tests\Speedtest1.txt" />
     <Content Include="DiffMatchPatch\tests\Speedtest2.txt" />
+    <None Include="Resources\ITech.jpg" />
     <None Include="Resources\category-32.png" />
     <None Include="Resources\category-16.png" />
     <None Include="Resources\transparent_bg.png" />
